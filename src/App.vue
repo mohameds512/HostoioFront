@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-link to="/" class="btn btn-sm btn-danger m-2">Category</router-link>
+    <router-link to="/tree" class="btn btn-sm btn-success">Tree</router-link>
+
+    <router-view></router-view>
+    <!-- <Category/> -->
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// import HelloWorld from './components/HelloWorld.vue'
+// import Category from './components/category.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // HelloWorld,
+    // Category
   }
 }
 </script>
